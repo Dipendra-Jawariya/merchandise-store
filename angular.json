@@ -93,12 +93,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/swiper/swiper-bundle.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "46d29003-bac2-4ada-a0c1-fe5052a3b8df"
   }
 }
