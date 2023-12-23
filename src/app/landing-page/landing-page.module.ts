@@ -1,4 +1,4 @@
-import {CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import {NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LandingPageRoutingModule } from './landing-page-routing.module';
@@ -22,11 +22,11 @@ register();
     CheckoutComponent,
     MerchandiseComponent
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     CommonModule,
     LandingPageRoutingModule,
     SharedModule
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class LandingPageModule { }

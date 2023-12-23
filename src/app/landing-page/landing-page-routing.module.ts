@@ -7,11 +7,16 @@ const routes: Routes = [
   {
     path: '',
     component: LandingPageComponent,
-  },{
-    path:'merch',
-    component:MerchandiseComponent
-  },
-];
+    // redirectTo : '/landing/merch',
+    children: [
+      {
+        path: 'merch',
+        component: MerchandiseComponent
+      }
+    ]
+  }]
+
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
